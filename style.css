@@ -139,6 +139,24 @@ code{background: rgba(255,255,255,.06); padding:.15rem .4rem; border-radius:10px
 .bullets{margin:12px 0 0; padding-left:18px; color:var(--muted); line-height:1.8}
 .bullets b{color:var(--text)}
 
+/* Highlights strip */
+.highlights{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:14px;
+}
+.pill{
+  padding:10px 12px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.03);
+  color: var(--muted);
+  font-weight:600;
+}
+.pill b{color: var(--text);}
+
+/* Projects */
 .projects{
   margin-top:16px;
   display:grid;
@@ -165,6 +183,23 @@ code{background: rgba(255,255,255,.06); padding:.15rem .4rem; border-radius:10px
 }
 .project-links a:hover{color: var(--text)}
 
+/* Projects with thumbnails */
+.with-thumb{
+  display:grid;
+  grid-template-columns: 170px 1fr;
+  gap:16px;
+  align-items:start;
+}
+.thumb{
+  width:100%;
+  height:120px;
+  object-fit:cover;
+  border-radius: 14px;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.02);
+}
+
+/* Skills / Experience / Contact */
 .skills{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -208,5 +243,7 @@ code{background: rgba(255,255,255,.06); padding:.15rem .4rem; border-radius:10px
   .projects{grid-template-columns: 1fr}
   .skills{grid-template-columns: 1fr}
   .contact{grid-template-columns: 1fr}
+  .with-thumb{grid-template-columns: 1fr}
+  .thumb{height:180px;}
   .navlinks{display:none}
 }
