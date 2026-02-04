@@ -14,10 +14,9 @@
 </head>
 
 <body>
-
 <header class="header">
   <div class="container nav">
-    <a class="brand" href="#top">SM</a>
+    <a class="brand" href="#top" aria-label="Home">SM</a>
     <nav class="navlinks">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -31,168 +30,370 @@
 
 <main id="top">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-grid">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
 
-    <div class="hero-left">
-      <p class="kicker">Data Scientist • ML Engineer • Generative AI</p>
-      <h1 class="title">Shivani Murukannaiah</h1>
-      <p class="subtitle">
-        Data Scientist & Machine Learning Engineer with experience across healthcare genomics,
-        enterprise AI, and large-scale analytics. I build production-ready ML and GenAI systems
-        that turn complex data into decisions.
+      <div class="hero-left">
+        <p class="kicker">Data Scientist • ML Engineer • Generative AI</p>
+        <h1 class="title">Shivani Murukannaiah</h1>
+        <p class="subtitle">
+          Data Scientist & Machine Learning Engineer with experience across healthcare genomics, enterprise AI,
+          and large-scale analytics. I build production-ready ML + LLM systems—data pipelines, RAG apps, and
+          dashboards—so teams can make faster, higher-confidence decisions.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-outline" href="assets/resume.pdf" target="_blank" rel="noreferrer">View Resume</a>
+        </div>
+
+        <div class="meta">
+          <span>Hartford, CT</span>
+          <span class="dot">•</span>
+          <a href="mailto:shivanimurukannaiah@gmail.com">shivanimurukannaiah@gmail.com</a>
+          <span class="dot">•</span>
+          <span>+1 (959) 274-8338</span>
+        </div>
+
+        <div class="links">
+          <a class="chip" href="https://www.linkedin.com/in/shivani1405/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="chip" href="https://github.com/Shivanimurukannaiah" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+
+        <div class="highlights">
+          <div class="pill"><b>750GB+</b> RNA-seq pipelines</div>
+          <div class="pill"><b>~40%</b> runtime reduction</div>
+          <div class="pill"><b>30–40%</b> RAG retrieval lift</div>
+          <div class="pill"><b>27%</b> tumor risk lift</div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-photo">
+          <img src="assets/profile.jpg" alt="Shivani Murukannaiah headshot">
+        </div>
+
+        <div class="card hero-card">
+          <h3>Focus Areas</h3>
+          <ul class="bullets">
+            <li><b>GenAI:</b> RAG, embeddings, evaluation, prompt engineering</li>
+            <li><b>ML:</b> XGBoost / Random Forest, model validation, feature engineering</li>
+            <li><b>Data Eng:</b> ETL/ELT, AWS, APIs, reproducible pipelines</li>
+            <li><b>Genomics:</b> RNA-seq, DESeq2, enrichment (GO/KEGG), HPC</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p class="lead">
+        I’m an M.S. Data Science candidate at the University of Connecticut (Dec 2025). My work spans
+        <b>genomics ML on HPC</b>, <b>enterprise RAG systems</b>, and <b>consumer NLP analytics</b>.
+        I care about measurable impact—speed, accuracy, reliability—and I communicate results clearly to both
+        technical and non-technical stakeholders.
       </p>
 
-      <div class="cta">
-        <a class="btn" href="#projects">View Projects</a>
-        <a class="btn btn-outline" href="#resume">View Resume</a>
-      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>What I’m looking for</h3>
+          <p>
+            Roles in <b>Machine Learning</b>, <b>Applied AI</b>, <b>GenAI Engineering</b>, or <b>Advanced Analytics</b>
+            where I can build end-to-end solutions (data → model → deployment → insight).
+          </p>
+        </div>
 
-      <div class="meta">
-        <span>Hartford, CT</span>
-        <span class="dot">•</span>
-        <a href="mailto:shivanimurukannaiah@gmail.com">shivanimurukannaiah@gmail.com</a>
-        <span class="dot">•</span>
-        <span>+1 (959) 274-8338</span>
-      </div>
-
-      <div class="links">
-        <a class="chip" href="https://www.linkedin.com/in/shivani1405/" target="_blank">LinkedIn</a>
-        <a class="chip" href="https://github.com/Shivanimurukannaiah" target="_blank">GitHub</a>
+        <div class="card">
+          <h3>What you’ll find here</h3>
+          <p>
+            Recruiter-friendly project summaries with the tools used, what I built, and the outcome.
+            Each project is designed to showcase shipping mentality: clean pipelines, evaluation, and UX.
+          </p>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="hero-right">
-      <div class="hero-photo">
-        <img src="assets/profile.jpg" alt="Shivani Murukannaiah">
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="muted">Thumbnails live in <code>assets/projects/</code>. Links point to GitHub where available.</p>
       </div>
 
-      <div class="card hero-card">
-        <h3>Focus Areas</h3>
-        <ul class="bullets">
-          <li>GenAI & RAG systems</li>
-          <li>ML modeling & evaluation</li>
-          <li>Cloud-native data pipelines</li>
-          <li>Healthcare & genomics analytics</li>
-        </ul>
+      <div class="projects">
+
+        <!-- Kannada Tutor -->
+        <article class="card project with-thumb">
+          <img class="thumb" src="assets/projects/kannada-tutor.png" alt="Language Kannada Tutor thumbnail">
+          <div>
+            <div class="project-top">
+              <h3>Language Kannada Tutor — AI-Powered Conversational Learning Assistant</h3>
+              <span class="tag">GenAI • NLP</span>
+            </div>
+            <p>
+              Built a multi-agent LLM tutor that teaches Kannada through structured lessons, flashcards, and quizzes—
+              with personalized practice and feedback loops.
+            </p>
+            <ul class="mini">
+              <li><b>Tech:</b> Python, LLMs, prompt design, agent orchestration</li>
+              <li><b>Design:</b> LessonAgent, FlashcardAgent, QuizAgent</li>
+              <li><b>Outcome:</b> engaging “learn-by-chat” experience with progressive difficulty</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Shivanimurukannaiah/Language-Kannada-Tutor" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Genomics -->
+        <article class="card project with-thumb">
+          <img class="thumb" src="assets/projects/genomics-rag.png" alt="Genomic Variant Insight Engine thumbnail">
+          <div>
+            <div class="project-top">
+              <h3>Genomic Variant Insight Engine — LLM-Powered Genomics Interpretation</h3>
+              <span class="tag">GenAI • Genomics</span>
+            </div>
+            <p>
+              Built an end-to-end genomics ML + RAG workflow to identify high-risk signatures from RNA-seq and generate
+              clinician-friendly interpretations grounded in trusted references.
+            </p>
+            <ul class="mini">
+              <li><b>Tech:</b> RNA-seq preprocessing, DESeq2, XGBoost/Random Forest, GPT-4/LLaMA</li>
+              <li><b>Infra:</b> AWS Lambda + API Gateway; reproducible pipelines</li>
+              <li><b>Output:</b> scalable inference + dashboards for decision support</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Compliance -->
+        <article class="card project with-thumb">
+          <img class="thumb" src="assets/projects/compliance-rag.png" alt="Enterprise AI Compliance Analyst thumbnail">
+          <div>
+            <div class="project-top">
+              <h3>Enterprise AI Compliance Analyst — LLM + RAG Document Understanding</h3>
+              <span class="tag">RAG • FastAPI</span>
+            </div>
+            <p>
+              Built a retrieval-augmented system for compliance document search, summarization, and policy comparison
+              with auditable outputs and quality evaluation.
+            </p>
+            <ul class="mini">
+              <li><b>Tech:</b> LangChain, embeddings, vector DB (Pinecone), FastAPI, Docker, AWS EC2</li>
+              <li><b>Quality:</b> prompt iteration + response evaluation to reduce irrelevant answers</li>
+              <li><b>Outcome:</b> faster triage and consistent summaries for review workflows</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Hike Bite -->
+        <article class="card project with-thumb">
+          <img class="thumb" src="assets/projects/hikebite.png" alt="Hike Bite Guardian thumbnail">
+          <div>
+            <div class="project-top">
+              <h3>Hike Bite Guardian — AI-Powered Insect Bite Assistant</h3>
+              <span class="tag">GenAI • CV</span>
+            </div>
+            <p>
+              Streamlit assistant that interprets bite images + symptoms, generates helpful visuals, and provides
+              severity guidance powered by a CNN classifier.
+            </p>
+            <ul class="mini">
+              <li><b>Tech:</b> Python, Streamlit, OpenAI API, CNN image classifier</li>
+              <li><b>Result:</b> ~85% classification accuracy; improved user interaction flow</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Harmonize -->
+        <article class="card project with-thumb">
+          <img class="thumb" src="assets/projects/harmonize.png" alt="Harmonize thumbnail">
+          <div>
+            <div class="project-top">
+              <h3>Harmonize — Cloud-Powered Music Analytics Pipeline</h3>
+              <span class="tag">ETL • Cloud</span>
+            </div>
+            <p>
+              Built a cloud ETL pipeline that processes JSON logs into an analytics-ready warehouse for BI and modeling.
+              Designed for reliable ingestion, transformation, and stakeholder dashboards.
+            </p>
+            <ul class="mini">
+              <li><b>Tech:</b> Python, AWS S3, SQL warehouse modeling</li>
+              <li><b>Impact:</b> improved model accuracy ~20% using refined features</li>
+            </ul>
+          </div>
+        </article>
+
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="container">
-    <h2>About</h2>
-    <p class="lead">
-      I’m an M.S. Data Science student at the University of Connecticut (Dec 2025) with hands-on
-      experience across healthcare research, fintech, and enterprise AI. I enjoy building
-      end-to-end systems—from raw data to deployed insight.
-    </p>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="container">
-    <h2>Projects</h2>
-
-    <div class="projects">
-
-      <article class="card project with-thumb">
-        <img class="thumb" src="assets/projects/kannada-tutor.png" alt="Kannada Tutor">
-        <div>
-          <h3>Language Kannada Tutor — GenAI NLP</h3>
-          <p>Conversational AI tutor using multi-agent LLM design for structured language learning.</p>
-          <ul class="mini">
-            <li>Python, LLMs, NLP</li>
-          </ul>
+      <div class="skills">
+        <div class="card">
+          <h3>Programming & Querying</h3>
+          <p>Python, R, SQL, Java, Bash</p>
         </div>
-      </article>
 
-      <article class="card project with-thumb">
-        <img class="thumb" src="assets/projects/genomics-rag.png" alt="Genomics RAG">
-        <div>
-          <h3>Genomic Variant Insight Engine</h3>
-          <p>ML + RAG system for interpreting RNA-seq variants with clinician-friendly summaries.</p>
-          <ul class="mini">
-            <li>RNA-seq, XGBoost, GPT-4</li>
-          </ul>
+        <div class="card">
+          <h3>Machine Learning</h3>
+          <p>Regression, Classification, Clustering, Feature Engineering, Model Evaluation, Random Forest, XGBoost, LightGBM</p>
         </div>
-      </article>
 
-      <article class="card project with-thumb">
-        <img class="thumb" src="assets/projects/compliance-rag.png" alt="Compliance RAG">
-        <div>
-          <h3>Enterprise AI Compliance Analyst</h3>
-          <p>RAG-powered document search and compliance summarization platform.</p>
-          <ul class="mini">
-            <li>LangChain, FastAPI, AWS</li>
-          </ul>
+        <div class="card">
+          <h3>GenAI & NLP</h3>
+          <p>GPT-4, LLaMA, RAG, embeddings, prompt engineering, LangChain, Whisper (voice queries), Hugging Face</p>
         </div>
-      </article>
 
-      <article class="card project with-thumb">
-        <img class="thumb" src="assets/projects/hikebite.png" alt="Hike Bite Guardian">
-        <div>
-          <h3>Hike Bite Guardian</h3>
-          <p>AI-powered insect bite severity classifier using images and symptoms.</p>
-          <ul class="mini">
-            <li>Streamlit, CNN</li>
-          </ul>
+        <div class="card">
+          <h3>Data Engineering</h3>
+          <p>ETL/ELT, pipelines, AWS (S3/EC2/Lambda), PostgreSQL, MongoDB, DynamoDB, API development</p>
         </div>
-      </article>
 
-      <article class="card project with-thumb">
-        <img class="thumb" src="assets/projects/harmonize.png" alt="Harmonize ETL">
-        <div>
-          <h3>Harmonize — Cloud Music Analytics</h3>
-          <p>Cloud ETL pipeline for music analytics and modeling.</p>
-          <ul class="mini">
-            <li>AWS S3, Python, SQL</li>
-          </ul>
+        <div class="card">
+          <h3>Visualization & Analytics</h3>
+          <p>Power BI, Tableau, Matplotlib, Seaborn, Plotly</p>
         </div>
-      </article>
 
-    </div>
-  </div>
-</section>
-
-<!-- RESUME -->
-<section id="resume" class="section">
-  <div class="container">
-    <div class="card resume-card">
-      <div>
-        <h2>Resume</h2>
-        <p class="muted">View or download my latest resume.</p>
-      </div>
-
-      <div class="resume-actions">
-        <a class="btn" href="assets/resume.pdf" target="_blank">View Resume</a>
-        <a class="btn btn-outline" href="assets/resume.pdf" download>Download</a>
+        <div class="card">
+          <h3>MLOps & Infra</h3>
+          <p>Docker, Git, FastAPI/Flask, MLflow (basics), HPC (SLURM), Jupyter</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:shivanimurukannaiah@gmail.com">shivanimurukannaiah@gmail.com</a></p>
-  </div>
-</section>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
 
-<footer class="footer">
-  © <span id="year"></span> Shivani Murukannaiah
-</footer>
+      <div class="timeline">
+
+        <div class="card">
+          <div class="row">
+            <h3>UConn Health — Research Data Analyst (ML & Genomics)</h3>
+            <span class="muted">Jun 2025 – Present</span>
+          </div>
+          <ul class="bullets">
+            <li>Architected ML + bioinformatics pipelines on AWS and HPC (Xanadu) for 750GB+ RNA-seq datasets; reduced runtime ~40% via parallelization.</li>
+            <li>Built and validated tumor risk prediction models (LogReg, Random Forest, XGBoost), improving identification of high-risk profiles by ~27%.</li>
+            <li>Performed DESeq2 differential expression and GO/KEGG enrichment (clusterProfiler) with publication-ready visualizations and dashboards.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <h3>Beats by Dre — AI Engineer (Contract, Consumer Analytics)</h3>
+            <span class="muted">May 2025 – Aug 2025</span>
+          </div>
+          <ul class="bullets">
+            <li>Built NLP workflows to analyze customer sentiment and emerging trends using Transformers, OpenAI API, and Python.</li>
+            <li>Developed Power BI + Matplotlib dashboards for voice-of-customer insights, supporting real-time product strategy and brand decisions.</li>
+            <li>Automated recurring reporting pipelines and summaries to improve speed and consistency of executive insights.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <h3>Mastercard — AI Engineer</h3>
+            <span class="muted">Jan 2025 – May 2025</span>
+          </div>
+          <ul class="bullets">
+            <li>Built Retrieval-Augmented Generation pipelines (LangChain, embeddings, vector DB) improving internal document retrieval 30–40% vs keyword search.</li>
+            <li>Deployed FastAPI/Flask inference services; optimized request handling and reduced response latency ~25% for internal tools.</li>
+            <li>Ran prompt engineering + response evaluation to reduce hallucinations/irrelevance ~20% across tested use cases.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <h3>Accenture — Data Analyst</h3>
+            <span class="muted">May 2022 – May 2024</span>
+          </div>
+          <ul class="bullets">
+            <li>Analyzed and validated enterprise datasets (100K+ records) during ERP/reporting modernization; improved downstream accuracy 15–20% post-migration.</li>
+            <li>Built Power BI dashboards and KPI reporting that reduced manual reporting effort 35–40% and improved turnaround time.</li>
+            <li>Automated recurring data prep/reporting via SQL, Excel Power Query, and Python—saving ~6–8 hours per cycle.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <h3>IIT Kanpur — Research Fellowship</h3>
+            <span class="muted">Nov 2022 – Jan 2023</span>
+          </div>
+          <ul class="bullets">
+            <li>Worked on applied ML research and advanced Python workflows under an academic fellowship environment.</li>
+            <li>Focused on building reproducible experiments, data processing, and result reporting for research outcomes.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="section">
+    <div class="container">
+      <div class="card resume-card">
+        <div>
+          <h2>Resume</h2>
+          <p class="muted">Open the latest PDF in a new tab, or download a copy.</p>
+        </div>
+
+        <div class="resume-actions">
+          <a class="btn" href="assets/resume.pdf" target="_blank" rel="noreferrer">View Resume</a>
+          <a class="btn btn-outline" href="assets/resume.pdf" download>Download</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="lead">If you’d like to collaborate or discuss roles in ML / GenAI / Analytics, feel free to reach out.</p>
+
+      <div class="contact">
+        <a class="card contact-card" href="mailto:shivanimurukannaiah@gmail.com">
+          <h3>Email</h3>
+          <p>shivanimurukannaiah@gmail.com</p>
+        </a>
+
+        <a class="card contact-card" href="https://www.linkedin.com/in/shivani1405/" target="_blank" rel="noreferrer">
+          <h3>LinkedIn</h3>
+          <p>www.linkedin.com/in/shivani1405</p>
+        </a>
+
+        <a class="card contact-card" href="https://github.com/Shivanimurukannaiah" target="_blank" rel="noreferrer">
+          <h3>GitHub</h3>
+          <p>github.com/Shivanimurukannaiah</p>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Shivani Murukannaiah</span>
+      </footer>
+    </div>
+  </section>
+
+</main>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
-</main>
 </body>
 </html>
